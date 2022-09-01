@@ -1,0 +1,29 @@
+{
+    "name":"bright-cloud-studio/isotope-color-selector",
+    "description":"Adds a custom color selector for Dixon Ecom",
+    "homepage": "http://brightcloudstudio.com/",
+    "keywords":["contao", "isotope", "color", "selector"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Bright Cloud Studio",
+            "homepage":"https://brightcloudstudio.com"
+        }
+    ],
+    "require":{
+        "php": "^8.0",
+        "contao/core-bundle": "^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/isotope_color_selector": "system/modules/isotope_color_selector"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
