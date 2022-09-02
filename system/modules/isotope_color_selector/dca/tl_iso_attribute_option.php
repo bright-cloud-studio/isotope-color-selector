@@ -33,7 +33,7 @@ $GLOBALS['TL_DCA']['tl_iso_attribute_option']['fields']['color_image'] = array
 	'default'		  => '',
 	'search'                  => true,
 	'eval' => [
-		'tl_class' => 'w50 clr',
+		'tl_class' => 'w50',
 		'fieldType' => 'radio', 
 		'filesOnly' => true
 	],
