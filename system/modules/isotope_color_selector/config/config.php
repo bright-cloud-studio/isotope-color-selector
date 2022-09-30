@@ -12,5 +12,5 @@
 
 /* Hooks */
 if (\Config::getInstance()->isComplete()) {
-  $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('CustomTags\AddColorSelector', 'onReplaceTag');
+    $GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('CustomTags\AddColorSelector', 'onReplaceTag');
 }
