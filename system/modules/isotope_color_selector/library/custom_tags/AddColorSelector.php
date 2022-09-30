@@ -14,7 +14,6 @@ namespace CustomTags;
 use Contao\Database;
 use Contao\DataContainer;
 use Contao\ContentElement;
-use Contao\FrontendTemplate;
 
 class AddColorSelector extends \System
 {
