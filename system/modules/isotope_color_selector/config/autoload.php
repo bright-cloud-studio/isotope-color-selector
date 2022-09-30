@@ -12,5 +12,5 @@
 
 ClassLoader::addClasses(array
 (
-  'CustomTags\AddColorSelector' 			=> 'system/modules/isotope_list_products_variants/library/custom_tags/AddColorSelector.php'
+  'CustomTags\AddColorSelector' 			=> 'system/modules/isotope_color_selector/library/custom_tags/AddColorSelector.php'
 ));
