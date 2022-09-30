@@ -16,7 +16,7 @@ use Contao\DataContainer;
 use Contao\ContentElement;
 use Contao\FrontendTemplate;
 
-class AddVariantsTags extends \System
+class AddColorSelector extends \System
 {
 	public function onReplaceTag (string $insertTag)
 	{
