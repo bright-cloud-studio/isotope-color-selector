@@ -73,7 +73,7 @@ class AddColorSelector extends \System
 		}
 
 		// something has gone horribly wrong, let the user know and hope for brighter lights ahead
-		return 'something_went_wrong';
+		//return 'something_went_wrong';
 	}
 	
 }
