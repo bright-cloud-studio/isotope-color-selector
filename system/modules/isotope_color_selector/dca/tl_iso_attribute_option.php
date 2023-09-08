@@ -12,7 +12,7 @@
 
  /* Extend the tl_user palettes */
 foreach ($GLOBALS['TL_DCA']['tl_iso_attribute_option']['palettes'] as $k => $v) {
-    $GLOBALS['TL_DCA']['tl_iso_attribute_option']['palettes'][$k] = str_replace('label;', 'label;{color_legend},color_css,color_image;', $v);
+    $GLOBALS['TL_DCA']['tl_iso_attribute_option']['palettes'][$k] = str_replace('label;', 'label;{color_legend},color_css,color_image,color_image_size;', $v);
 }
 
 /* Add fields to tl_user */
