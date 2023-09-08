@@ -30,7 +30,31 @@ class AddColorSelector extends \System
 		// lets make decisions based on the beginning of the tag
 		switch($arrTag[0]) {
 			case 'color_selector':
-
+			    
+			    /*
+                $buffer = '';
+                $buffer .= '<div class="widget widget-radio mandatory"><fieldset id="ctrl_color_fmd6_product_1" class="radio_container mandatory"><legend><span class="invisible">Mandatory field </span>Color<span class="mandatory">*</span></legend>';
+                
+				//echo "COLOR SELECTOR FOR PRODUCT: " . $arrTag[1];
+                
+                // get all sub products
+                $dbObj = \Database::getInstance()->prepare("SELECT * FROM tl_iso_product WHERE pid = '" . $arrTag[1] . "' AND published = 1")->execute(); 
+                
+                $count = 0;
+                if ($dbObj->numRows > 0)
+				{
+                    $count = 0;
+				    while($dbObj->next()) {
+                        $buffer .= '<div class="">'.$dbObj->color.'</div>';
+                        $buffer .= '<span><input type="radio" name="color" id="opt_color_fmd6_product_1_'.$count.'" class="radio" value="'.$dbObj->color.'" checked="" required=""><label id="lbl_color_fmd6_product_1_'.$count.'" for="opt_color_fmd6_product_1_'.$count.'">'.$dbObj->color.'</label></span>';
+                        $count++;
+                    }
+                }
+                
+                $buffer .= '</fieldset>\n</div>\n';
+                */
+                
+                
                 $dbObj = \Database::getInstance()->prepare("SELECT * FROM tl_iso_product WHERE pid = '" . $arrTag[1] . "' AND published = 1")->execute(); 
                 
                 $count = 0;
@@ -48,9 +72,8 @@ class AddColorSelector extends \System
 			break;
 		}
 
-        // YOU MUST return false to signafy you are not going to be modifying this, send it along to any other packages.
-        return false;
-        
+		// something has gone horribly wrong, let the user know and hope for brighter lights ahead
+		return 'something_went_wrong';
 	}
 	
 }
