@@ -40,4 +40,18 @@ $GLOBALS['TL_DCA']['tl_iso_attribute_option']['fields']['color_image'] = array
 	'sql'                    => ['type' => 'binary', 'length' => 16, 'notnull' => false, 'fixed' => true]
 );
 
+$GLOBALS['TL_DCA']['tl_iso_attribute_option']['fields']['color_image_size'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG']['tl_iso_attribute_option']['color_image_size'],
+    'exclude'                 => true,
+    'inputType'               => 'imageSize',
+    'reference'               => &$GLOBALS['TL_LANG']['MSC'],
+    'eval'                    => array('rgxp'=>'natural', 'includeBlankOption'=>true, 'nospace'=>true, 'helpwizard'=>true, 'tl_class'=>'w50'),
+    'options_callback' => static function ()
+    {
+        return System::getContainer()->get('contao.image.sizes')->getOptionsForUser(BackendUser::getInstance());
+    },
+    'sql'                     => "varchar(64) NOT NULL default ''"
+);
+
 
